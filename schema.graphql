@@ -1,0 +1,13 @@
+type UserOperation {
+  id: ID!
+  chainId: Int!
+  transactionHash: String!
+  userOpHash: String! @index
+  entryPoint: String!
+  sender: String!
+  paymaster: String!
+  nonce: BigInt!
+  success: Boolean!
+  actualGasCost: BigInt!
+  actualGasUsed: BigInt!
+}
